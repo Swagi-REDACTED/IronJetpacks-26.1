@@ -25,13 +25,13 @@ public class ModJetpacks {
     private static final Jetpack NETHERITE = JetpackRegistry.createJetpack("netherite", 6, 0x382013, 5, 15, "minecraft:netherite_ingot");
     private static final Jetpack CREATIVE = JetpackRegistry.createJetpack("creative", 0, 0xCF1AE9, 8, 0, "null").setCreative();
     
-    private static final Jetpack COPPER = JetpackRegistry.createJetpack("copper", 1, 0xCE7201, 2, 12, "tag:c:copper_ingots");
-    private static final Jetpack BRONZE = JetpackRegistry.createJetpack("bronze", 2, 0xEC9E3F, 3, 9, "tag:c:bronze_ingots");
-    private static final Jetpack SILVER = JetpackRegistry.createJetpack("silver", 2, 0x9FC4DD, 3, 12, "tag:c:silver_ingots");
-    private static final Jetpack STEEL = JetpackRegistry.createJetpack("steel", 3, 0x565656, 3, 15, "tag:c:steel_ingots");
-    private static final Jetpack ELECTRUM = JetpackRegistry.createJetpack("electrum", 3, 0xA79135, 2, 18, "tag:c:electrum_ingots");
-    private static final Jetpack INVAR = JetpackRegistry.createJetpack("invar", 3, 0x929D97, 3, 15, "tag:c:invar_ingots");
-    private static final Jetpack PLATINUM = JetpackRegistry.createJetpack("platinum", 4, 0x6FEAEF, 4, 12, "tag:c:platinum_ingots");
+    private static final Jetpack COPPER = JetpackRegistry.createJetpack("copper", 1, 0xCE7201, 2, 12, "tag:c:ingots/copper");
+    private static final Jetpack BRONZE = JetpackRegistry.createJetpack("bronze", 2, 0xEC9E3F, 3, 9, "tag:c:ingots/bronze");
+    private static final Jetpack SILVER = JetpackRegistry.createJetpack("silver", 2, 0x9FC4DD, 3, 12, "tag:c:ingots/silver");
+    private static final Jetpack STEEL = JetpackRegistry.createJetpack("steel", 3, 0x565656, 3, 15, "tag:c:ingots/steel");
+    private static final Jetpack ELECTRUM = JetpackRegistry.createJetpack("electrum", 3, 0xA79135, 2, 18, "tag:c:ingots/electrum");
+    private static final Jetpack INVAR = JetpackRegistry.createJetpack("invar", 3, 0x929D97, 3, 15, "tag:c:ingots/invar");
+    private static final Jetpack PLATINUM = JetpackRegistry.createJetpack("platinum", 4, 0x6FEAEF, 4, 12, "tag:c:ingots/platinum");
     
     static {
         WOOD.setStats(20000, 32, 0.18D, 0.10D, 0.06D, 0.16D, 0.14D, 1.0D, 1.0D);
