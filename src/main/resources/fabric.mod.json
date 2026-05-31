@@ -14,14 +14,17 @@
   "entrypoints": {
     "main": [
       "com.blakebr0.ironjetpacks.IronJetpacks"
+    ],
+    "kubejs-set-recipes": [
+      "com.blakebr0.ironjetpacks.compat.kubejs.KubeJSCompat"
     ]
   },
   "mixins": [
     "iron-jetpacks.mixin.json"
   ],
   "depends": {
-    "fabricloader": ">=0.7.4",
-    "fabric": "*",
-    "minecraft": "1.15.x"
+    "fabricloader": ">=0.11.0",
+    "fabric-api": "*",
+    "minecraft": ">=1.19"
   }
 }

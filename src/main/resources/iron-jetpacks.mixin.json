@@ -4,11 +4,10 @@
   "package": "com.blakebr0.ironjetpacks.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MixinPlayerInventory", "MixinRecipeManager", "PlayerDimensionEvent", "PlayerLeaveEvent", "ServerPlayNetworkHandlerAccessor", "ShapedRecipeAccesser",
-    "WorldCloseEvent"
+    "MixinLivingEntity", "MixinRecipeManager", "ServerPlayNetworkHandlerAccessor", "ShapedRecipeAccessor"
   ],
   "client": [
-    "MixinArmorFeatureRenderer", "MixinItemRenderer"
+    "MixinMouseHandler"
   ],
   "injectors": {
     "defaultRequire": 1
