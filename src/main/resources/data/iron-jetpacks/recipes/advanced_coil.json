@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "RDR",
+    " R "
+  ],
+  "key": {
+    "R": "minecraft:redstone",
+    "D": "minecraft:gold_ingot"
+  },
+  "result": {
+    "id": "iron-jetpacks:advanced_coil",
+    "count": 1
+  }
+}
