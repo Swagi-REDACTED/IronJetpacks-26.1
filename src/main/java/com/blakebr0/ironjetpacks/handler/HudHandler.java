@@ -1,0 +1,92 @@
+package com.blakebr0.ironjetpacks.handler;
+
+import com.blakebr0.ironjetpacks.IronJetpacks;
+import com.blakebr0.ironjetpacks.client.util.HudHelper;
+import com.blakebr0.ironjetpacks.client.util.HudHelper.HudPos;
+import com.blakebr0.ironjetpacks.config.ModConfigs;
+import com.blakebr0.ironjetpacks.item.JetpackItem;
+import com.mojang.blaze3d.systems.RenderSystem;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.DeltaTracker;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.screens.ChatScreen;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+
+@Environment(EnvType.CLIENT)
+public class HudHandler {
+    private static final Identifier HUD_TEXTURE = Identifier.fromNamespaceAndPath(IronJetpacks.MOD_ID, "textures/gui/hud.png");
+    
+    public static void onRenderGameOverlay(GuiGraphicsExtractor graphics, DeltaTracker delta) {
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.player != null) {
+            if (ModConfigs.getClient().hud.enableHud && (ModConfigs.getClient().hud.showHudOverChat || !ModConfigs.getClient().hud.showHudOverChat && !(mc.screen instanceof ChatScreen)) && !mc.options.hideGui) {
+                ItemStack chest = mc.player.getItemBySlot(EquipmentSlot.CHEST);
+                Item item = chest.getItem();
+                if (!chest.isEmpty() && item instanceof JetpackItem) {
+                    JetpackItem jetpack = (JetpackItem) item;
+                    HudPos pos = HudHelper.getHudPos();
+                    if (pos != null) {
+                        int xPos = (int) (pos.x / 0.33) - 18;
+                        int yPos = (int) (pos.y / 0.33) - 78;
+                        
+                        graphics.pose().pushMatrix();
+                        graphics.pose().scale(0.33f, 0.33f);
+                        graphics.blit(net.minecraft.client.renderer.RenderPipelines.GUI_TEXTURED, HUD_TEXTURE, xPos, yPos, 0, 0, 28, 156, 256, 256);
+                        int i2 = HudHelper.getEnergyBarScaled(jetpack, chest);
+                        graphics.blit(net.minecraft.client.renderer.RenderPipelines.GUI_TEXTURED, HUD_TEXTURE, xPos, 166 - i2 + yPos - 10, 28, 156 - i2, 28, i2, 256, 256);
+                        graphics.pose().popMatrix();
+                        
+                        boolean advanced = ModConfigs.getClient().hud.advancedDisplay;
+                        if (advanced) {
+                            String fuelAmt = HudHelper.getFuel(jetpack, chest);
+                            String throttleStr = com.blakebr0.ironjetpacks.handler.KeyBindingsHandler.keyThrottle.getTranslatedKeyMessage().getString().toUpperCase() + ": " + jetpack.getThrottle(chest) + "%";
+                            String engineKey = com.blakebr0.ironjetpacks.handler.KeyBindingsHandler.keyEngine.getTranslatedKeyMessage().getString().toUpperCase();
+                            String hoverKey = com.blakebr0.ironjetpacks.handler.KeyBindingsHandler.keyHover.getTranslatedKeyMessage().getString().toUpperCase();
+                            
+                            net.minecraft.network.chat.Component fuelComp = net.minecraft.network.chat.Component.literal(fuelAmt).withStyle(ChatFormatting.GRAY);
+                            net.minecraft.network.chat.Component throttleComp = net.minecraft.network.chat.Component.literal(throttleStr).withStyle(ChatFormatting.GRAY);
+                            
+                            net.minecraft.network.chat.Component engineComp = net.minecraft.network.chat.Component.literal(engineKey + ": ")
+                                .withStyle(ChatFormatting.GRAY)
+                                .append(net.minecraft.network.chat.Component.literal(jetpack.isEngineOn(chest) ? "ON" : "OFF")
+                                    .withStyle(jetpack.isEngineOn(chest) ? ChatFormatting.GREEN : ChatFormatting.RED));
+                                    
+                            net.minecraft.network.chat.Component hoverComp = net.minecraft.network.chat.Component.literal(hoverKey + ": ")
+                                .withStyle(ChatFormatting.GRAY)
+                                .append(net.minecraft.network.chat.Component.literal(jetpack.isHovering(chest) ? "ON" : "OFF")
+                                    .withStyle(jetpack.isHovering(chest) ? ChatFormatting.GREEN : ChatFormatting.RED));
+                                    
+                            boolean rightSide = ModConfigs.getClient().hud.hudPosition.get() <= 2;
+                            int alignX = rightSide ? pos.x + 6 : pos.x - 8;
+                            
+                            graphics.text(mc.font, fuelComp, rightSide ? alignX : alignX - mc.font.width(fuelComp), pos.y - 21, 0xFFFFFFFF);
+                            graphics.text(mc.font, throttleComp, rightSide ? alignX : alignX - mc.font.width(throttleComp), pos.y - 6, 0xFFFFFFFF);
+                            graphics.text(mc.font, engineComp, rightSide ? alignX : alignX - mc.font.width(engineComp), pos.y + 4, 0xFFFFFFFF);
+                            graphics.text(mc.font, hoverComp, rightSide ? alignX : alignX - mc.font.width(hoverComp), pos.y + 14, 0xFFFFFFFF);
+                        } else {
+                            String fuel = ChatFormatting.GRAY + HudHelper.getFuel(jetpack, chest);
+                            String engine = ChatFormatting.GRAY + "E: " + HudHelper.getOn(jetpack.isEngineOn(chest));
+                            String hover = ChatFormatting.GRAY + "H: " + HudHelper.getOn(jetpack.isHovering(chest));
+                            
+                            if (pos.side == 1) {
+                                graphics.text(mc.font, fuel, pos.x - 8 - mc.font.width(fuel), pos.y - 21, 16383998);
+                                graphics.text(mc.font, engine, pos.x - 8 - mc.font.width(engine), pos.y + 4, 16383998);
+                                graphics.text(mc.font, hover, pos.x - 8 - mc.font.width(hover), pos.y + 14, 16383998);
+                            } else {
+                                graphics.text(mc.font, fuel, pos.x + 6, pos.y - 21, 16383998);
+                                graphics.text(mc.font, engine, pos.x + 6, pos.y + 4, 16383998);
+                                graphics.text(mc.font, hover, pos.x + 6, pos.y + 14, 16383998);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
