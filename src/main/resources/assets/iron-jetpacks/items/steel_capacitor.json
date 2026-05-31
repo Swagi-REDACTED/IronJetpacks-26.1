@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "iron-jetpacks:item/steel_capacitor",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": 5658198
+      }
+    ]
+  }
+}
