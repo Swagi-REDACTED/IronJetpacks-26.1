@@ -1,0 +1,170 @@
+/* Settings Menu Button */
+.mc-settings-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 100;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.mc-settings-btn svg {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+/* MkDocs Top Left Logo Fix */
+.md-header__button.md-logo img, 
+.md-header__button.md-logo svg {
+    filter: brightness(0) invert(1);
+}
+.md-header__button.md-logo {
+    margin-right: -20px;
+}
+
+.mc-settings-btn line {
+    stroke: #ffffff; /* Hardcoded white to ensure visibility */
+    stroke-width: 2;
+    stroke-linecap: square;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mc-settings-btn .line-top {
+    transform-origin: 12px 6px;
+}
+
+.mc-settings-btn .line-middle {
+    transform-origin: 12px 12px;
+}
+
+.mc-settings-btn .line-bottom {
+    transform-origin: 12px 18px;
+}
+
+/* Morph to X */
+.mc-settings-btn.active .line-top {
+    transform: translate(0, 6px) rotate(45deg);
+}
+.mc-settings-btn.active .line-middle {
+    opacity: 0;
+}
+.mc-settings-btn.active .line-bottom {
+    transform: translate(0, -6px) rotate(-45deg);
+}
+
+/* Settings Panel Container */
+.mc-settings-panel {
+    position: absolute;
+    top: 48px; /* Below header */
+    right: 0;
+    width: 320px;
+    background-color: #4051B5;
+    color: #ffffff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    padding: 16px;
+    z-index: 99;
+    
+    /* Animation */
+    transform: translateY(-150%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.3s ease, visibility 0.4s;
+}
+
+.mc-settings-panel.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Settings Item Layout */
+.mc-setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.mc-setting-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Toggle Track */
+.mc-toggle {
+    position: relative;
+    width: 44px;
+    height: 22px;
+    background-color: #555;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mc-toggle::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.mc-toggle.active {
+    background-color: #64b5f6; /* Lighter blue */
+    box-shadow: 0 0 10px #64b5f6;
+}
+
+.mc-toggle.active::after {
+    transform: translateX(22px);
+}
+
+/* Keybind Widget */
+.mc-keybind-widget {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mc-keybind-widget:hover {
+    background-color: #444;
+}
+
+.mc-keybind-widget.listening {
+    background-color: #64b5f6;
+    color: #000;
+    box-shadow: 0 0 8px #64b5f6;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from { opacity: 1; }
+    to { opacity: 0.7; }
+}
+
+/* Body override for bold text */
+body.mc-no-bold .mc-tooltip .mc-title,
+body.mc-no-bold .mc-tooltip .text-white {
+    font-weight: normal !important;
+}

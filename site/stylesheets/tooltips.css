@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../stylesheets/Minecraftia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 1. Force the Browser to render raw pixels */
+.mc-tooltip,
+.mc-tooltip *,
+.mc-settings-panel,
+.mc-settings-panel * {
+    image-rendering: pixelated !important;
+    -webkit-font-smoothing: none !important;
+    font-smooth: never !important;
+    text-rendering: optimizeSpeed !important;
+}
+
+.crafting-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.mc-hover-zone {
+    position: absolute;
+    cursor: default;
+}
+
+/* 2. The Tooltip Container & Geometry */
+.mc-tooltip {
+    position: fixed;
+    /* Fixed so it doesn't detach on scroll */
+    z-index: 9999;
+    display: none;
+
+    padding: 10px 8px 0px 8px;
+    background-color: rgba(16, 0, 16, 0.94);
+    /* 0xF0100010 Exact MC Background */
+    font-family: 'Minecraft', monospace;
+    /* Must use a real MC font */
+    font-size: 16px;
+    line-height: 1.2;
+    white-space: nowrap;
+    pointer-events: none;
+    text-align: left;
+
+    /* Outer Black Border (No corners natively because of offsets) */
+    box-shadow:
+        0px 2px 0px 0px #000,
+        0px -2px 0px 0px #000,
+        2px 0px 0px 0px #000,
+        -2px 0px 0px 0px #000;
+}
+
+/* Inner purple borders */
+.mc-tooltip::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+
+    /* Inner Purple highlight & shadow with exact 0x50 Alpha (0.31) */
+    box-shadow:
+        inset 0px 2px 0px 0px rgba(80, 0, 255, 0.31),
+        inset 2px 0px 0px 0px rgba(80, 0, 255, 0.31),
+        inset 0px -2px 0px 0px rgba(40, 0, 127, 0.31),
+        inset -2px 0px 0px 0px rgba(40, 0, 127, 0.31);
+
+    /* Trims exactly 2px off the corners of the inner border, 
+       revealing the 0.94 transparency background underneath perfectly */
+    clip-path: polygon(2px 0, calc(100% - 2px) 0, 100% 2px, 100% calc(100% - 2px), calc(100% - 2px) 100%, 2px 100%, 0 calc(100% - 2px), 0 2px);
+}
+
+/* 3. Text Shadow Renderer */
+/* Default to bold to match what user reported as "currently has" */
+.mc-tooltip {
+    font-weight: bold;
+}
+
+/* Fix for when toggle is OFF: Force everything inside tooltip to normal */
+body.mc-no-bold .mc-tooltip,
+body.mc-no-bold .mc-tooltip div,
+body.mc-no-bold .mc-tooltip span {
+    font-weight: normal !important;
+}
+
+.mc-title {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0px #3F3F3F;
+    /* No blur! */
+    margin-bottom: 4px;
+}
+
+.mc-subtitle {
+    color: #5555FF;
+    text-shadow: 2px 2px 0px #11113F;
+}
+
+.mc-badges {
+    margin-bottom: 6px;
+}
+
+.mc-separator {
+    height: 4px;
+}
+
+.mc-stats {
+    margin-bottom: 6px;
+}
+
+.mc-footer {
+    margin-top: 6px;
+}
+
+.text-white {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0px #3F3F3F;
+}
+
+.text-gray {
+    color: #AAAAAA;
+    text-shadow: 2px 2px 0px #2A2A2A;
+}
+
+.text-blue {
+    color: #5555FF;
+    text-shadow: 2px 2px 0px #11113F;
+}
+
+.text-green {
+    color: #55FF55;
+    text-shadow: 2px 2px 0px #113F11;
+}
+
+.text-yellow {
+    color: #FFFF55;
+    text-shadow: 2px 2px 0px #3F3F00;
+}
+
+.text-red {
+    color: #FF5555;
+    text-shadow: 2px 2px 0px #3F1111;
+}
+
+/* 4. The Italic Fix */
+.mc-italic {
+    font-style: italic;
+    padding-right: 6px; /* Fix for custom font italic lean covering spaces */
+}
