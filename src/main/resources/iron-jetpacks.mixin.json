@@ -4,7 +4,8 @@
   "package": "com.blakebr0.ironjetpacks.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MixinLivingEntity", "MixinRecipeManager", "ServerPlayNetworkHandlerAccessor", "ShapedRecipeAccessor"
+    "MixinLivingEntity", "MixinRecipeManager", "ServerPlayNetworkHandlerAccessor", "ShapedRecipeAccessor", "RecipeManagerAccessor",
+    "NormalCraftingRecipeAccessor"
   ],
   "client": [
     "MixinMouseHandler"
