@@ -9,14 +9,16 @@
 .mc-tooltip,
 .mc-tooltip *,
 .mc-settings-panel,
-.mc-settings-panel * {
+.mc-settings-panel *,
+img {
     image-rendering: pixelated !important;
     -webkit-font-smoothing: none !important;
     font-smooth: never !important;
     text-rendering: optimizeSpeed !important;
 }
 
-.crafting-container {
+.crafting-container,
+.furnace-container {
     position: relative;
     display: inline-block;
     margin: 10px 0;
@@ -35,6 +37,7 @@
     display: none;
 
     padding: 10px 8px 0px 8px;
+    margin: 0px 0px -1px 0px;
     background-color: rgba(16, 0, 16, 0.94);
     /* 0xF0100010 Exact MC Background */
     font-family: 'Minecraft', monospace;
@@ -93,7 +96,7 @@ body.mc-no-bold .mc-tooltip span {
     color: #FFFFFF;
     text-shadow: 2px 2px 0px #3F3F3F;
     /* No blur! */
-    margin-bottom: 4px;
+    margin-bottom: -0px;
 }
 
 .mc-subtitle {
@@ -150,5 +153,6 @@ body.mc-no-bold .mc-tooltip span {
 /* 4. The Italic Fix */
 .mc-italic {
     font-style: italic;
-    padding-right: 6px; /* Fix for custom font italic lean covering spaces */
+    padding-right: 6px;
+    /* Fix for custom font italic lean covering spaces */
 }

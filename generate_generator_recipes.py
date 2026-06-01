@@ -43,7 +43,7 @@ if __name__ == "__main__":
     INSULATED_COPPER = "image/TechReborn/Power/Cable/insulated_copper_cable.png"
     FURNACE = "image/Vanilla/Furnace.png"
     
-    BASIC_FRAME = "image/TechReborn/Power/Machine/MachineFrame.png"
+    BASIC_FRAME = "image/TechReborn/Power/Machine/basic_machine_frame.png"
     RED_CELL = "image/TechReborn/Power/Battery/red_cell_battery.png"
     GENERATOR = "image/TechReborn/Power/Machine/Generator.png"
 

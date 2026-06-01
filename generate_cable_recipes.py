@@ -38,7 +38,7 @@ def generate_recipe(output_name, grid, output_image_path):
 
 if __name__ == "__main__":
     RUBBER = "image/TechReborn/Power/Rubber/rubber.png"
-    COPPER = "image/TechReborn/copper_ingot.png"
+    COPPER = "image/Vanilla/Copper_Ingot.png"
     GOLD = "image/Vanilla/Gold_Ingot.png"
     TIN = "image/TechReborn/tin_ingot.png"
     REFINED_IRON = "image/TechReborn/refined_iron_ingot.png"
