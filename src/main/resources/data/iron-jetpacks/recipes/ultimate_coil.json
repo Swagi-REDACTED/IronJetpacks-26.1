@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " R ",
+    "RDR",
+    " R "
+  ],
+  "key": {
+    "R": "minecraft:redstone",
+    "D": "minecraft:emerald"
+  },
+  "result": {
+    "id": "iron-jetpacks:ultimate_coil",
+    "count": 1
+  }
+}
