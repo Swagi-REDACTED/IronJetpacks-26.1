@@ -1,0 +1,324 @@
+[
+    {
+        "label": "Slot 1",
+        "x": 60,
+        "y": 34,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Slot 2",
+        "x": 96,
+        "y": 34,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Slot 3",
+        "x": 132,
+        "y": 34,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Slot 4",
+        "x": 60,
+        "y": 70,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Slot 5",
+        "x": 96,
+        "y": 70,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Slot 6",
+        "x": 132,
+        "y": 70,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Slot 7",
+        "x": 60,
+        "y": 106,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Slot 8",
+        "x": 96,
+        "y": 106,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Slot 9",
+        "x": 132,
+        "y": 106,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Output",
+        "x": 240,
+        "y": 62,
+        "width": 48,
+        "height": 48
+    },
+    {
+        "label": "Inventory Slot 1",
+        "x": 16,
+        "y": 168,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 2",
+        "x": 52,
+        "y": 168,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 3",
+        "x": 88,
+        "y": 168,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 4",
+        "x": 124,
+        "y": 168,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 5",
+        "x": 160,
+        "y": 168,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 6",
+        "x": 196,
+        "y": 168,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 7",
+        "x": 232,
+        "y": 168,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 8",
+        "x": 268,
+        "y": 168,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 9",
+        "x": 304,
+        "y": 168,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 10",
+        "x": 16,
+        "y": 204,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 11",
+        "x": 52,
+        "y": 204,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 12",
+        "x": 88,
+        "y": 204,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 13",
+        "x": 124,
+        "y": 204,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 14",
+        "x": 160,
+        "y": 204,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 15",
+        "x": 196,
+        "y": 204,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 16",
+        "x": 232,
+        "y": 204,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 17",
+        "x": 268,
+        "y": 204,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 18",
+        "x": 304,
+        "y": 204,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 19",
+        "x": 16,
+        "y": 240,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 20",
+        "x": 52,
+        "y": 240,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 21",
+        "x": 88,
+        "y": 240,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 22",
+        "x": 124,
+        "y": 240,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 23",
+        "x": 160,
+        "y": 240,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 24",
+        "x": 196,
+        "y": 240,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 25",
+        "x": 232,
+        "y": 240,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 26",
+        "x": 268,
+        "y": 240,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Inventory Slot 27",
+        "x": 304,
+        "y": 240,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Hotbar Slot 1",
+        "x": 16,
+        "y": 284,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Hotbar Slot 2",
+        "x": 52,
+        "y": 284,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Hotbar Slot 3",
+        "x": 88,
+        "y": 284,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Hotbar Slot 4",
+        "x": 124,
+        "y": 284,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Hotbar Slot 5",
+        "x": 160,
+        "y": 284,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Hotbar Slot 6",
+        "x": 196,
+        "y": 284,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Hotbar Slot 7",
+        "x": 232,
+        "y": 284,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Hotbar Slot 8",
+        "x": 268,
+        "y": 284,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Hotbar Slot 9",
+        "x": 304,
+        "y": 284,
+        "width": 32,
+        "height": 32
+    }
+]

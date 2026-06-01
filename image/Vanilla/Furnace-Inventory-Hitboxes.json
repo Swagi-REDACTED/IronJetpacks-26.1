@@ -1,0 +1,23 @@
+[
+    {
+        "label": "Input",
+        "x": 112,
+        "y": 34,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Fuel",
+        "x": 112,
+        "y": 106,
+        "width": 32,
+        "height": 32
+    },
+    {
+        "label": "Output",
+        "x": 224,
+        "y": 62,
+        "width": 48,
+        "height": 48
+    }
+]
