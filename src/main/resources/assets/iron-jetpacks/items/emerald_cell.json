@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "iron-jetpacks:item/emerald_cell",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": 4322180
+      }
+    ]
+  }
+}
