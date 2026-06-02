@@ -26,7 +26,7 @@ public class HudHandler {
         Minecraft mc = Minecraft.getInstance();
         if (mc.player != null) {
             if (ModConfigs.getClient().hud.enableHud && (ModConfigs.getClient().hud.showHudOverChat || !ModConfigs.getClient().hud.showHudOverChat && !(mc.screen instanceof ChatScreen)) && !mc.options.hideGui) {
-                ItemStack chest = mc.player.getItemBySlot(EquipmentSlot.CHEST);
+                ItemStack chest = com.blakebr0.ironjetpacks.util.JetpackUtils.getEquippedJetpack(mc.player);
                 Item item = chest.getItem();
                 if (!chest.isEmpty() && item instanceof JetpackItem) {
                     JetpackItem jetpack = (JetpackItem) item;
