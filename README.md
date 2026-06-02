@@ -1,8 +1,5 @@
 # Iron Jetpacks
-
-Adds fully customizable E powered jetpacks!
-
-[Version 3.x+ Docs](https://swagi-redacted.github.io/IronJetpacks-26.1)
+Adds fully customizable FE powered jetpacks!
 
 [Version 2.x+ Docs](https://mods.blakebr0.com/docs/ironjetpacks)
 

@@ -24,7 +24,7 @@ public class JetpackClientHandler {
         Minecraft mc = Minecraft.getInstance();
         if (mc.player != null && mc.level != null) {
             if (!mc.isPaused()) {
-                ItemStack chest = mc.player.getItemBySlot(EquipmentSlot.CHEST);
+                ItemStack chest = com.blakebr0.ironjetpacks.util.JetpackUtils.getEquippedJetpack(mc.player);
                 Item item = chest.getItem();
                 if (!chest.isEmpty() && item instanceof JetpackItem && JetpackUtils.isFlying(mc.player)) {
                     Jetpack jetpack = ((JetpackItem) item).getJetpack();
