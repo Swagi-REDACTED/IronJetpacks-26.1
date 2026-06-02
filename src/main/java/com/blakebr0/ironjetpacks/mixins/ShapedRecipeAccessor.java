@@ -8,8 +8,8 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 public interface ShapedRecipeAccessor {
 
     @Accessor("pattern")
-    net.minecraft.world.item.crafting.ShapedRecipePattern getPattern();
+    net.minecraft.world.item.crafting.ShapedRecipePattern ironjetpacks$getPattern();
     
     @Accessor("result")
-    net.minecraft.world.item.ItemStackTemplate getResult();
+    net.minecraft.world.item.ItemStackTemplate ironjetpacks$getResult();
 }
