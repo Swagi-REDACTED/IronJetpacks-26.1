@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "iron-jetpacks:wood_jetpack", "required": false },
+    { "id": "iron-jetpacks:stone_jetpack", "required": false },
+    { "id": "iron-jetpacks:iron_jetpack", "required": false },
+    { "id": "iron-jetpacks:gold_jetpack", "required": false },
+    { "id": "iron-jetpacks:diamond_jetpack", "required": false },
+    { "id": "iron-jetpacks:emerald_jetpack", "required": false },
+    { "id": "iron-jetpacks:netherite_jetpack", "required": false },
+    { "id": "iron-jetpacks:creative_jetpack", "required": false },
+    { "id": "iron-jetpacks:copper_jetpack", "required": false },
+    { "id": "iron-jetpacks:bronze_jetpack", "required": false },
+    { "id": "iron-jetpacks:silver_jetpack", "required": false },
+    { "id": "iron-jetpacks:steel_jetpack", "required": false },
+    { "id": "iron-jetpacks:electrum_jetpack", "required": false },
+    { "id": "iron-jetpacks:invar_jetpack", "required": false },
+    { "id": "iron-jetpacks:platinum_jetpack", "required": false }
+  ]
+}
