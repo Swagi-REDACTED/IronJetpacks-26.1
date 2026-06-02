@@ -21,7 +21,7 @@ public class MixinMouseHandler {
         Minecraft mc = Minecraft.getInstance();
         if (mc.player != null && mc.level != null && window == mc.getWindow().handle()) {
             if (KeyBindingsHandler.keyThrottle != null && KeyBindingsHandler.keyThrottle.isDown()) {
-                ItemStack chest = mc.player.getItemBySlot(EquipmentSlot.CHEST);
+                ItemStack chest = com.blakebr0.ironjetpacks.util.JetpackUtils.getEquippedJetpack(mc.player);
                 if (!chest.isEmpty() && chest.getItem() instanceof JetpackItem jetpackItem) {
                     int step = com.blakebr0.ironjetpacks.config.ModConfigs.getClient().general.throttleStepAmount.get();
                     int delta = (vertical > 0 ? 1 : (vertical < 0 ? -1 : 0)) * step;
