@@ -22,13 +22,38 @@ import net.minecraft.world.item.equipment.EquipmentAssets;
 import team.reborn.energy.api.EnergyStorage;
 
 public class JetpackUtils {
-    public static boolean isFlying(Player player) {
+    public static ItemStack getEquippedJetpack(Player player) {
         ItemStack stack = player.getItemBySlot(EquipmentSlot.CHEST);
+        if (stack.isEmpty() || !(stack.getItem() instanceof JetpackItem)) {
+            if (net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("trinkets")) {
+                var access = com.blakebr0.ironjetpacks.compat.trinkets.TrinketsCompat.getEquippedJetpackAccess(player);
+                if (access != null) {
+                    stack = access.get();
+                }
+            }
+        }
+        return stack;
+    }
+
+    public static boolean isFlying(Player player) {
+        ItemStack stack = getEquippedJetpack(player);
+        boolean isTrinket = stack != player.getItemBySlot(EquipmentSlot.CHEST);
+
         if (!stack.isEmpty()) {
             Item item = stack.getItem();
             if (item instanceof JetpackItem jetpack) {
-                ItemSlotStorage storage = new ItemSlotStorage(player, EquipmentSlot.CHEST);
-                if (jetpack.isEngineOn(stack) && (EnergyStorage.ITEM.find(stack, ContainerItemContext.ofSingleSlot(storage)).getAmount() > 0 || player.isCreative() || jetpack.getJetpack().creative)) {
+                long amount = 0;
+                if (!isTrinket) {
+                    ItemSlotStorage storage = new ItemSlotStorage(player, EquipmentSlot.CHEST);
+                    amount = EnergyStorage.ITEM.find(stack, ContainerItemContext.ofSingleSlot(storage)).getAmount();
+                } else {
+                    var access = com.blakebr0.ironjetpacks.compat.trinkets.TrinketsCompat.getEquippedJetpackAccess(player);
+                    if (access != null) {
+                        amount = EnergyStorage.ITEM.find(stack, ContainerItemContext.ofSingleSlot(new com.blakebr0.ironjetpacks.compat.trinkets.TrinketSlotStorage(access))).getAmount();
+                    }
+                }
+
+                if (jetpack.isEngineOn(stack) && (amount > 0 || player.isCreative() || jetpack.getJetpack().creative)) {
                     if (jetpack.isHovering(stack)) {
                         return !player.onGround();
                     } else {
