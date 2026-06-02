@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 1. State Management
     const state = {
-        boldText: localStorage.getItem('mc_bold_text') !== 'false', // Default true
-        engineActive: localStorage.getItem('mc_engine_active') !== 'false', // Default true
-        hoverActive: localStorage.getItem('mc_hover_active') !== 'false', // Default true
+        boldText: localStorage.getItem('mc_bold_text') === 'true', // Default false
+        engineActive: localStorage.getItem('mc_engine_active') === 'true', // Default false
+        hoverActive: localStorage.getItem('mc_hover_active') === 'true', // Default false
         engineKey: localStorage.getItem('mc_engine_key') || 'V',
         hoverKey: localStorage.getItem('mc_hover_key') || 'G'
     };

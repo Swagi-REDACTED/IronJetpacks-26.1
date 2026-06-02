@@ -130,6 +130,36 @@ document.addEventListener('DOMContentLoaded', () => {
     function initTooltips() {
         createTooltipElement();
         
+        const recipeResizeObserver = new ResizeObserver(entries => {
+            for (let entry of entries) {
+                const parentWidth = entry.contentRect.width;
+                const wrappers = entry.target.querySelectorAll('.crafting-container, .furnace-container');
+                
+                wrappers.forEach(wrapper => {
+                    const img = wrapper.querySelector('img');
+                    if (!img) return;
+                    
+                    const nativeW = 352;
+                    const nativeH = 332;
+                    
+                    let scale = 1.0;
+                    if (parentWidth < nativeW) {
+                        if (parentWidth >= nativeW * 0.75) scale = 0.75;
+                        else if (parentWidth >= nativeW * 0.5) scale = 0.5;
+                        else scale = 0.25;
+                    }
+                    
+                    const newW = nativeW * scale;
+                    const newH = nativeH * scale;
+                    
+                    wrapper.style.width = newW + 'px';
+                    wrapper.style.height = newH + 'px';
+                    img.style.width = newW + 'px';
+                    img.style.height = newH + 'px';
+                });
+            }
+        });
+
         const images = document.querySelectorAll('img');
         images.forEach(img => {
             if (!img.src.includes('_recipe')) return;
@@ -146,6 +176,10 @@ document.addEventListener('DOMContentLoaded', () => {
             wrapper.className = isFurnace ? 'furnace-container' : 'crafting-container';
             img.parentNode.insertBefore(wrapper, img);
             wrapper.appendChild(img);
+            
+            if (wrapper.parentNode) {
+                recipeResizeObserver.observe(wrapper.parentNode);
+            }
             
             const activeHitboxes = isFurnace ? furnaceHitboxesData : hitboxesData;
 
