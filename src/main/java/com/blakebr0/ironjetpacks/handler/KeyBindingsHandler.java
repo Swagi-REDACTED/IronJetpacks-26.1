@@ -58,7 +58,7 @@ public class KeyBindingsHandler {
         if (player == null)
             return;
         
-        ItemStack chest = player.getItemBySlot(EquipmentSlot.CHEST);
+        ItemStack chest = com.blakebr0.ironjetpacks.util.JetpackUtils.getEquippedJetpack(player);
         Item item = chest.getItem();
         
         if (item instanceof JetpackItem) {
