@@ -25,11 +25,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Fetch the JSON files
+    // Dynamically calculate the base URL from our own script tag
+    // MkDocs generates relative paths like '../javascripts/tooltips.js'
+    let scriptTag = document.querySelector('script[src*="javascripts/tooltips.js"]');
+    let baseUrl = scriptTag ? scriptTag.getAttribute('src').split('javascripts/tooltips.js')[0] : '';
+    // Ensure it ends with slash if it's not empty and doesn't already
+    if (baseUrl && !baseUrl.endsWith('/')) baseUrl += '/';
+
+    // Fetch the JSON files using the relative base path
     Promise.all([
-        fetch(window.location.origin + '/javascripts/recipes_data.json').then(r => r.json()),
-        fetch(window.location.origin + '/image/Vanilla/Crafting-Inventory-Hitboxes.json').then(r => r.json()),
-        fetch(window.location.origin + '/image/Vanilla/Furnace-Inventory-Hitboxes.json').then(r => r.json())
+        fetch(baseUrl + 'javascripts/recipes_data.json').then(r => r.json()),
+        fetch(baseUrl + 'image/Vanilla/Crafting-Inventory-Hitboxes.json').then(r => r.json()),
+        fetch(baseUrl + 'image/Vanilla/Furnace-Inventory-Hitboxes.json').then(r => r.json())
     ]).then(([recipes, hitboxes, furnaceHitboxes]) => {
         recipesData = recipes;
         hitboxesData = hitboxes;
