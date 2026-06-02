@@ -27,7 +27,7 @@ public class JetpackUpgradeRecipe extends ShapedRecipe {
     @Override
     public ItemStack assemble(CraftingInput inv) {
         ItemStack jetpack = inv.getItem(4);
-        ItemStack result = ((ShapedRecipeAccessor) this).getResult().create();
+        ItemStack result = ((ShapedRecipeAccessor) this).ironjetpacks$getResult().create();
         
         if (!jetpack.isEmpty() && jetpack.getItem() instanceof JetpackItem) {
             result.applyComponents(jetpack.getComponentsPatch());
@@ -43,13 +43,13 @@ public class JetpackUpgradeRecipe extends ShapedRecipe {
     }
     
     public static final MapCodec<JetpackUpgradeRecipe> MAP_CODEC = ShapedRecipe.MAP_CODEC.xmap(
-            r -> new JetpackUpgradeRecipe(((com.blakebr0.ironjetpacks.mixins.NormalCraftingRecipeAccessor) r).getCommonInfo(), ((com.blakebr0.ironjetpacks.mixins.NormalCraftingRecipeAccessor) r).getBookInfo(),
-                    ((ShapedRecipeAccessor) r).getPattern(), ((ShapedRecipeAccessor) r).getResult()),
+            r -> new JetpackUpgradeRecipe(((com.blakebr0.ironjetpacks.mixins.NormalCraftingRecipeAccessor) r).ironjetpacks$getCommonInfo(), ((com.blakebr0.ironjetpacks.mixins.NormalCraftingRecipeAccessor) r).ironjetpacks$getBookInfo(),
+                    ((ShapedRecipeAccessor) r).ironjetpacks$getPattern(), ((ShapedRecipeAccessor) r).ironjetpacks$getResult()),
             r -> r);
 
     public static final StreamCodec<RegistryFriendlyByteBuf, JetpackUpgradeRecipe> STREAM_CODEC = ShapedRecipe.STREAM_CODEC.map(
-            r -> new JetpackUpgradeRecipe(((com.blakebr0.ironjetpacks.mixins.NormalCraftingRecipeAccessor) r).getCommonInfo(),
-                    ((com.blakebr0.ironjetpacks.mixins.NormalCraftingRecipeAccessor) r).getBookInfo(), ((ShapedRecipeAccessor) r).getPattern(),
-                    ((ShapedRecipeAccessor) r).getResult()),
+            r -> new JetpackUpgradeRecipe(((com.blakebr0.ironjetpacks.mixins.NormalCraftingRecipeAccessor) r).ironjetpacks$getCommonInfo(),
+                    ((com.blakebr0.ironjetpacks.mixins.NormalCraftingRecipeAccessor) r).ironjetpacks$getBookInfo(), ((ShapedRecipeAccessor) r).ironjetpacks$getPattern(),
+                    ((ShapedRecipeAccessor) r).ironjetpacks$getResult()),
             r -> r);
 }
