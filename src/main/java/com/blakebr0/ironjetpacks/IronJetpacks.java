@@ -77,6 +77,10 @@ public class IronJetpacks implements ModInitializer {
         }
         FtlCompat.init();
         
+        if (FabricLoader.getInstance().isModLoaded("trinkets")) {
+            com.blakebr0.ironjetpacks.compat.trinkets.TrinketsCompat.init();
+        }
+        
         ServerLifecycleEvents.SERVER_STOPPING.register(server -> InputHandler.clear());
         ServerEntityLevelChangeEvents.AFTER_PLAYER_CHANGE_LEVEL.register((player, origin, destination) -> InputHandler.onChangeDimension(player));
         ServerPlayConnectionEvents.DISCONNECT.register((handler, server) -> InputHandler.onLogout(handler.getPlayer()));
