@@ -73,6 +73,10 @@ public class IronJetpacksClient {
                     return model;
                 }
             }, jetpack.item.get());
+            
+            if (net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("trinkets")) {
+                com.blakebr0.ironjetpacks.compat.trinkets.TrinketsClientCompat.registerRenderer(jetpack);
+            }
         }
     }
 }
