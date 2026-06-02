@@ -46,7 +46,13 @@ public class Jetpack {
         this.armorPoints = armorPoints;
         this.enchantablilty = enchantability;
         this.craftingMaterialString = craftingMaterialString;
-        this.item = Suppliers.memoize(() -> new JetpackItem(this, new Item.Properties().setId(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.ITEM, net.minecraft.resources.Identifier.fromNamespaceAndPath(IronJetpacks.MOD_ID, this.name + "_jetpack")))));
+        this.item = Suppliers.memoize(() -> {
+            Item.Properties properties = new Item.Properties().setId(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.ITEM, net.minecraft.resources.Identifier.fromNamespaceAndPath(IronJetpacks.MOD_ID, this.name + "_jetpack")));
+            if (net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("trinkets")) {
+                com.blakebr0.ironjetpacks.compat.trinkets.TrinketsCompat.applyTrinketComponent(properties);
+            }
+            return new JetpackItem(this, properties);
+        });
     }
     
     public Jetpack setStats(double capacity, double usage, double speedVert, double accelVert, double speedSide, double speedHover, double speedHoverSlow, double sprintSpeed, double sprintFuel) {
