@@ -25,7 +25,7 @@ public class UpdateThrottleMessage {
     public static void onMessage(UpdateThrottleMessage message, MinecraftServer server, ServerPlayer player) {
         server.execute(() -> {
             if (player != null) {
-                ItemStack chest = player.getItemBySlot(EquipmentSlot.CHEST);
+                ItemStack chest = com.blakebr0.ironjetpacks.util.JetpackUtils.getEquippedJetpack(player);
                 if (chest.getItem() instanceof JetpackItem jetpackItem) {
                     int currentThrottle = jetpackItem.getThrottle(chest);
                     int newThrottle = Math.max(0, Math.min(100, currentThrottle + message.throttleDelta));
