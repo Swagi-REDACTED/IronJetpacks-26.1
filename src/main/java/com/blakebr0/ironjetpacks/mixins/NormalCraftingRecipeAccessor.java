@@ -8,8 +8,8 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 public interface NormalCraftingRecipeAccessor {
 
     @Accessor("commonInfo")
-    net.minecraft.world.item.crafting.Recipe.CommonInfo getCommonInfo();
+    net.minecraft.world.item.crafting.Recipe.CommonInfo ironjetpacks$getCommonInfo();
     
     @Accessor("bookInfo")
-    net.minecraft.world.item.crafting.CraftingRecipe.CraftingBookInfo getBookInfo();
+    net.minecraft.world.item.crafting.CraftingRecipe.CraftingBookInfo ironjetpacks$getBookInfo();
 }
