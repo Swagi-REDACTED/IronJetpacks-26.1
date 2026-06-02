@@ -109,25 +109,23 @@ for name, tier, mat_name, tags in JETPACKS:
     
     # Cell Recipe
     add_recipe(f"{name}_cell_recipe.png", {
-        "0": redstone, "1": glass, "2": redstone,
-        "3": glass, "4": mat, "5": glass,
-        "6": redstone, "7": glass, "8": redstone,
+        "1": redstone, "3": mat, "4": coil, "5": mat, "7": redstone,
         "output": cell
     })
     
     # Capacitor Recipe
     add_recipe(f"{name}_capacitor_recipe.png", {
-        "0": iron, "1": cell, "2": iron,
-        "3": cell, "4": mat, "5": cell,
-        "6": iron, "7": cell, "8": iron,
+        "0": mat, "1": cell, "2": mat,
+        "3": mat, "4": cell, "5": mat,
+        "6": mat, "7": cell, "8": mat,
         "output": cap
     })
     
     # Thruster Recipe
     add_recipe(f"{name}_thruster_recipe.png", {
-        "0": iron, "1": coil, "2": iron,
-        "3": cell, "4": mat, "5": cell,
-        "6": iron, "7": iron, "8": iron,
+        "0": mat, "1": coil, "2": mat,
+        "3": coil, "4": cell, "5": coil,
+        "6": mat, "7": {"name": "Furnace", "tags": ["Vanilla"]}, "8": mat,
         "output": thruster
     })
     

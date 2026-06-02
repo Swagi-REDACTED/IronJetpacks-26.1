@@ -38,20 +38,7 @@
     }
   },
   "wood_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -59,37 +46,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Oak Planks",
       "tags": [
         "Building Blocks"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Basic Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Oak Planks",
       "tags": [
-        "Redstone Blocks",
-        "Ingredients"
+        "Building Blocks"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -105,9 +79,9 @@
   },
   "wood_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Oak Planks",
       "tags": [
-        "Ingredients"
+        "Building Blocks"
       ]
     },
     "1": {
@@ -117,33 +91,33 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Wood Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Oak Planks",
       "tags": [
         "Building Blocks"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Oak Planks",
+      "tags": [
+        "Building Blocks"
+      ]
+    },
+    "4": {
       "name": "Wood Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Iron Ingot",
+    "5": {
+      "name": "Oak Planks",
       "tags": [
-        "Ingredients"
+        "Building Blocks"
+      ]
+    },
+    "6": {
+      "name": "Oak Planks",
+      "tags": [
+        "Building Blocks"
       ]
     },
     "7": {
@@ -153,9 +127,9 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Oak Planks",
       "tags": [
-        "Ingredients"
+        "Building Blocks"
       ]
     },
     "output": {
@@ -167,9 +141,9 @@
   },
   "wood_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Oak Planks",
       "tags": [
-        "Ingredients"
+        "Building Blocks"
       ]
     },
     "1": {
@@ -179,45 +153,45 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Wood Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Oak Planks",
       "tags": [
         "Building Blocks"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Basic Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Wood Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Iron Ingot",
+    "5": {
+      "name": "Basic Coil",
       "tags": [
-        "Ingredients"
+        "Iron Jetpacks"
+      ]
+    },
+    "6": {
+      "name": "Oak Planks",
+      "tags": [
+        "Building Blocks"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Oak Planks",
       "tags": [
-        "Ingredients"
+        "Building Blocks"
       ]
     },
     "output": {
@@ -295,20 +269,7 @@
     }
   },
   "stone_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -316,38 +277,26 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Stone",
       "tags": [
         "Building Blocks",
         "Natural Blocks"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Basic Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Stone",
       "tags": [
-        "Redstone Blocks",
-        "Ingredients"
+        "Building Blocks",
+        "Natural Blocks"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -363,9 +312,10 @@
   },
   "stone_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Stone",
       "tags": [
-        "Ingredients"
+        "Building Blocks",
+        "Natural Blocks"
       ]
     },
     "1": {
@@ -375,34 +325,37 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Stone Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Stone",
       "tags": [
         "Building Blocks",
         "Natural Blocks"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Stone",
+      "tags": [
+        "Building Blocks",
+        "Natural Blocks"
+      ]
+    },
+    "4": {
       "name": "Stone Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Iron Ingot",
+    "5": {
+      "name": "Stone",
       "tags": [
-        "Ingredients"
+        "Building Blocks",
+        "Natural Blocks"
+      ]
+    },
+    "6": {
+      "name": "Stone",
+      "tags": [
+        "Building Blocks",
+        "Natural Blocks"
       ]
     },
     "7": {
@@ -412,9 +365,10 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Stone",
       "tags": [
-        "Ingredients"
+        "Building Blocks",
+        "Natural Blocks"
       ]
     },
     "output": {
@@ -426,9 +380,10 @@
   },
   "stone_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Stone",
       "tags": [
-        "Ingredients"
+        "Building Blocks",
+        "Natural Blocks"
       ]
     },
     "1": {
@@ -438,46 +393,48 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Stone Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Stone",
       "tags": [
         "Building Blocks",
         "Natural Blocks"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Basic Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Stone Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Iron Ingot",
+    "5": {
+      "name": "Basic Coil",
       "tags": [
-        "Ingredients"
+        "Iron Jetpacks"
+      ]
+    },
+    "6": {
+      "name": "Stone",
+      "tags": [
+        "Building Blocks",
+        "Natural Blocks"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Stone",
       "tags": [
-        "Ingredients"
+        "Building Blocks",
+        "Natural Blocks"
       ]
     },
     "output": {
@@ -630,20 +587,7 @@
     }
   },
   "copper_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -651,37 +595,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Copper Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Basic Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Copper Ingot",
       "tags": [
-        "Redstone Blocks",
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -697,7 +628,7 @@
   },
   "copper_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Copper Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -709,31 +640,31 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Copper Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Copper Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Copper Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
+    "4": {
       "name": "Copper Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Copper Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Copper Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -745,7 +676,7 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Copper Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -759,7 +690,7 @@
   },
   "copper_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Copper Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -771,43 +702,43 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Copper Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Copper Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Basic Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Copper Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Basic Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Copper Ingot",
       "tags": [
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Copper Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -954,20 +885,7 @@
     }
   },
   "iron_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -975,37 +893,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Iron Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Basic Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Iron Ingot",
       "tags": [
-        "Redstone Blocks",
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -1039,21 +944,21 @@
       ]
     },
     "3": {
-      "name": "Iron Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Iron Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "4": {
       "name": "Iron Cell",
       "tags": [
         "Iron Jetpacks"
+      ]
+    },
+    "5": {
+      "name": "Iron Ingot",
+      "tags": [
+        "Ingredients"
       ]
     },
     "6": {
@@ -1101,19 +1006,19 @@
       ]
     },
     "3": {
-      "name": "Iron Cell",
+      "name": "Basic Coil",
       "tags": [
         "Iron Jetpacks"
       ]
     },
     "4": {
-      "name": "Iron Ingot",
+      "name": "Iron Cell",
       "tags": [
-        "Ingredients"
+        "Iron Jetpacks"
       ]
     },
     "5": {
-      "name": "Iron Cell",
+      "name": "Basic Coil",
       "tags": [
         "Iron Jetpacks"
       ]
@@ -1125,9 +1030,9 @@
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
@@ -1278,20 +1183,7 @@
     }
   },
   "bronze_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -1299,37 +1191,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Bronze Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Basic Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Bronze Ingot",
       "tags": [
-        "Redstone Blocks",
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -1345,7 +1224,7 @@
   },
   "bronze_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Bronze Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -1357,31 +1236,31 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Bronze Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Bronze Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Bronze Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
+    "4": {
       "name": "Bronze Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Bronze Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Bronze Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -1393,7 +1272,7 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Bronze Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -1407,7 +1286,7 @@
   },
   "bronze_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Bronze Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -1419,43 +1298,43 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Bronze Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Bronze Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Basic Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Bronze Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Basic Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Bronze Ingot",
       "tags": [
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Bronze Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -1602,20 +1481,7 @@
     }
   },
   "silver_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -1623,37 +1489,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Silver Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Basic Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Silver Ingot",
       "tags": [
-        "Redstone Blocks",
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -1669,7 +1522,7 @@
   },
   "silver_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Silver Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -1681,31 +1534,31 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Silver Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Silver Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Silver Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
+    "4": {
       "name": "Silver Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Silver Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Silver Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -1717,7 +1570,7 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Silver Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -1731,7 +1584,7 @@
   },
   "silver_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Silver Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -1743,43 +1596,43 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Silver Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Silver Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Basic Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Silver Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Basic Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Silver Ingot",
       "tags": [
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Silver Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -1926,20 +1779,7 @@
     }
   },
   "gold_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -1947,37 +1787,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Gold Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Advanced Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Gold Ingot",
       "tags": [
-        "Redstone Blocks",
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -1993,7 +1820,7 @@
   },
   "gold_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Gold Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2005,31 +1832,31 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Gold Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Gold Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Gold Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
+    "4": {
       "name": "Gold Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Gold Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Gold Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2041,7 +1868,7 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Gold Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2055,7 +1882,7 @@
   },
   "gold_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Gold Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2067,43 +1894,43 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Gold Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Gold Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Advanced Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Gold Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Advanced Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Gold Ingot",
       "tags": [
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Gold Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2250,20 +2077,7 @@
     }
   },
   "steel_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -2271,37 +2085,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Steel Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Advanced Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Steel Ingot",
       "tags": [
-        "Redstone Blocks",
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -2317,7 +2118,7 @@
   },
   "steel_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Steel Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2329,31 +2130,31 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Steel Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Steel Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Steel Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
+    "4": {
       "name": "Steel Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Steel Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Steel Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2365,7 +2166,7 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Steel Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2379,7 +2180,7 @@
   },
   "steel_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Steel Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2391,43 +2192,43 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Steel Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Steel Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Advanced Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Steel Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Advanced Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Steel Ingot",
       "tags": [
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Steel Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2574,20 +2375,7 @@
     }
   },
   "electrum_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -2595,37 +2383,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Electrum Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Advanced Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Electrum Ingot",
       "tags": [
-        "Redstone Blocks",
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -2641,7 +2416,7 @@
   },
   "electrum_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Electrum Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2653,31 +2428,31 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Electrum Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Electrum Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Electrum Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
+    "4": {
       "name": "Electrum Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Electrum Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Electrum Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2689,7 +2464,7 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Electrum Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2703,7 +2478,7 @@
   },
   "electrum_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Electrum Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2715,43 +2490,43 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Electrum Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Electrum Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Advanced Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Electrum Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Advanced Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Electrum Ingot",
       "tags": [
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Electrum Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2898,20 +2673,7 @@
     }
   },
   "invar_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -2919,37 +2681,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Invar Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Advanced Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Invar Ingot",
       "tags": [
-        "Redstone Blocks",
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -2965,7 +2714,7 @@
   },
   "invar_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Invar Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -2977,31 +2726,31 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Invar Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Invar Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Invar Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
+    "4": {
       "name": "Invar Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Invar Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Invar Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -3013,7 +2762,7 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Invar Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -3027,7 +2776,7 @@
   },
   "invar_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Invar Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -3039,43 +2788,43 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Invar Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Invar Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Advanced Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Invar Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Advanced Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Invar Ingot",
       "tags": [
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Invar Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -3222,20 +2971,7 @@
     }
   },
   "diamond_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -3243,37 +2979,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Diamond",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Elite Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Diamond",
       "tags": [
-        "Redstone Blocks",
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -3289,7 +3012,7 @@
   },
   "diamond_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Diamond",
       "tags": [
         "Ingredients"
       ]
@@ -3301,31 +3024,31 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Diamond Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Diamond",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Diamond",
+      "tags": [
+        "Ingredients"
+      ]
+    },
+    "4": {
       "name": "Diamond Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Diamond",
+      "tags": [
+        "Ingredients"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Diamond",
       "tags": [
         "Ingredients"
       ]
@@ -3337,7 +3060,7 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Diamond",
       "tags": [
         "Ingredients"
       ]
@@ -3351,7 +3074,7 @@
   },
   "diamond_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Diamond",
       "tags": [
         "Ingredients"
       ]
@@ -3363,43 +3086,43 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Diamond Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Diamond",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Elite Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Diamond Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Elite Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Diamond",
       "tags": [
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Diamond",
       "tags": [
         "Ingredients"
       ]
@@ -3546,20 +3269,7 @@
     }
   },
   "platinum_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -3567,37 +3277,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Platinum Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Elite Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Platinum Ingot",
       "tags": [
-        "Redstone Blocks",
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -3613,7 +3310,7 @@
   },
   "platinum_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Platinum Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -3625,31 +3322,31 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Platinum Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Platinum Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Platinum Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
+    "4": {
       "name": "Platinum Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Platinum Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Platinum Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -3661,7 +3358,7 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Platinum Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -3675,7 +3372,7 @@
   },
   "platinum_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Platinum Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -3687,43 +3384,43 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Platinum Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Platinum Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Elite Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Platinum Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Elite Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Platinum Ingot",
       "tags": [
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Platinum Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -3870,20 +3567,7 @@
     }
   },
   "emerald_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -3891,37 +3575,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Emerald",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Ultimate Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Emerald",
       "tags": [
-        "Redstone Blocks",
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -3937,7 +3608,7 @@
   },
   "emerald_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Emerald",
       "tags": [
         "Ingredients"
       ]
@@ -3949,31 +3620,31 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Emerald Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Emerald",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Emerald",
+      "tags": [
+        "Ingredients"
+      ]
+    },
+    "4": {
       "name": "Emerald Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Emerald",
+      "tags": [
+        "Ingredients"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Emerald",
       "tags": [
         "Ingredients"
       ]
@@ -3985,7 +3656,7 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Emerald",
       "tags": [
         "Ingredients"
       ]
@@ -3999,7 +3670,7 @@
   },
   "emerald_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Emerald",
       "tags": [
         "Ingredients"
       ]
@@ -4011,43 +3682,43 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Emerald Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Emerald",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Ultimate Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Emerald Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Ultimate Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Emerald",
       "tags": [
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Emerald",
       "tags": [
         "Ingredients"
       ]
@@ -4194,20 +3865,7 @@
     }
   },
   "netherite_cell_recipe.png": {
-    "0": {
-      "name": "Redstone Dust",
-      "tags": [
-        "Redstone Blocks",
-        "Ingredients"
-      ]
-    },
     "1": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "2": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -4215,37 +3873,24 @@
       ]
     },
     "3": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "4": {
       "name": "Netherite Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
-      "name": "Glass",
+    "4": {
+      "name": "Expert Coil",
       "tags": [
-        "Building Blocks"
+        "Iron Jetpacks"
       ]
     },
-    "6": {
-      "name": "Redstone Dust",
+    "5": {
+      "name": "Netherite Ingot",
       "tags": [
-        "Redstone Blocks",
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Glass",
-      "tags": [
-        "Building Blocks"
-      ]
-    },
-    "8": {
       "name": "Redstone Dust",
       "tags": [
         "Redstone Blocks",
@@ -4261,7 +3906,7 @@
   },
   "netherite_capacitor_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Netherite Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -4273,31 +3918,31 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Netherite Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Netherite Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Netherite Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
+    "4": {
       "name": "Netherite Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Netherite Ingot",
+      "tags": [
+        "Ingredients"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Netherite Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -4309,7 +3954,7 @@
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Netherite Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -4323,7 +3968,7 @@
   },
   "netherite_thruster_recipe.png": {
     "0": {
-      "name": "Iron Ingot",
+      "name": "Netherite Ingot",
       "tags": [
         "Ingredients"
       ]
@@ -4335,43 +3980,43 @@
       ]
     },
     "2": {
-      "name": "Iron Ingot",
-      "tags": [
-        "Ingredients"
-      ]
-    },
-    "3": {
-      "name": "Netherite Cell",
-      "tags": [
-        "Iron Jetpacks"
-      ]
-    },
-    "4": {
       "name": "Netherite Ingot",
       "tags": [
         "Ingredients"
       ]
     },
-    "5": {
+    "3": {
+      "name": "Expert Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
+    "4": {
       "name": "Netherite Cell",
       "tags": [
         "Iron Jetpacks"
       ]
     },
+    "5": {
+      "name": "Expert Coil",
+      "tags": [
+        "Iron Jetpacks"
+      ]
+    },
     "6": {
-      "name": "Iron Ingot",
+      "name": "Netherite Ingot",
       "tags": [
         "Ingredients"
       ]
     },
     "7": {
-      "name": "Iron Ingot",
+      "name": "Furnace",
       "tags": [
-        "Ingredients"
+        "Vanilla"
       ]
     },
     "8": {
-      "name": "Iron Ingot",
+      "name": "Netherite Ingot",
       "tags": [
         "Ingredients"
       ]
