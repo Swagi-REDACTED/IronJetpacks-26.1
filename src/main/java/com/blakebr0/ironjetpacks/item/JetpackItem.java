@@ -50,12 +50,13 @@ public class JetpackItem extends Item implements Colored, Enableable {
     @Override
     public void inventoryTick(ItemStack stack, net.minecraft.server.level.ServerLevel worldIn, net.minecraft.world.entity.Entity entityIn, @org.jspecify.annotations.Nullable EquipmentSlot slot) {
         if (!(entityIn instanceof Player player) || slot != EquipmentSlot.CHEST) return;
-        ItemStack chest = player.getItemBySlot(EquipmentSlot.CHEST);
-        Item item = chest.getItem();
-        if (!chest.isEmpty() && item instanceof JetpackItem) {
-            JetpackItem jetpack = (JetpackItem) item;
-            if (jetpack.isEngineOn(chest)) {
-                boolean hover = jetpack.isHovering(chest);
+        tickJetpack(stack, player);
+    }
+    
+    public void tickJetpack(ItemStack stack, Player player) {
+        if (!stack.isEmpty() && stack.getItem() instanceof JetpackItem jetpack) {
+            if (jetpack.isEngineOn(stack)) {
+                boolean hover = jetpack.isHovering(stack);
                 if (InputHandler.isHoldingUp(player) || hover && !player.onGround()) {
                     Jetpack info = jetpack.getJetpack();
                     
@@ -63,15 +64,21 @@ public class JetpackItem extends Item implements Colored, Enableable {
                     double currentAccel = info.accelVert * (player.getDeltaMovement().y() < 0.3D ? 2.5D : 1.0D);
                     double currentSpeedVertical = info.speedVert * (player.isUnderWater() ? 0.4D : 1.0D);
                     
-                    int throttle = getThrottle(chest);
+                    int throttle = getThrottle(stack);
                     double usage = player.isSprinting() ? info.usage * info.sprintFuel : info.usage;
                     usage = usage * (throttle / 100.0);
                     
                     boolean creative = info.creative;
                     
-                    EnergyStorage energy = EnergyStorage.ITEM.find(stack, net.fabricmc.fabric.api.transfer.v1.context.ContainerItemContext.ofSingleSlot(new com.blakebr0.ironjetpacks.item.storage.ItemSlotStorage(player, EquipmentSlot.CHEST)));
-                    if (energy == null) {
-                        energy = EnergyStorage.ITEM.find(stack, net.fabricmc.fabric.api.transfer.v1.context.ContainerItemContext.withConstant(stack));
+                    EnergyStorage energy = null;
+                    if (player.getItemBySlot(EquipmentSlot.CHEST) == stack) {
+                        energy = EnergyStorage.ITEM.find(stack, net.fabricmc.fabric.api.transfer.v1.context.ContainerItemContext.ofSingleSlot(new com.blakebr0.ironjetpacks.item.storage.ItemSlotStorage(player, EquipmentSlot.CHEST)));
+                    }
+                    if (energy == null && net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("trinkets")) {
+                        var access = com.blakebr0.ironjetpacks.compat.trinkets.TrinketsCompat.getEquippedJetpackAccess(player);
+                        if (access != null && access.get() == stack) {
+                            energy = EnergyStorage.ITEM.find(stack, net.fabricmc.fabric.api.transfer.v1.context.ContainerItemContext.ofSingleSlot(new com.blakebr0.ironjetpacks.compat.trinkets.TrinketSlotStorage(access)));
+                        }
                     }
                     
                     try (Transaction transaction = Transaction.openOuter()) {
