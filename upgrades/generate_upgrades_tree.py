@@ -10,7 +10,20 @@ tiers = {
 }
 
 # Generate Index
-index_content = "# Upgrades Index\n\nBrowse Jetpack upgrades by Tier.\n\n<div class=\"grid cards\" markdown>\n\n"
+index_content = """# Upgrades Overview
+
+Welcome to the Upgrades section of the Iron Jetpacks Wiki. Here you will learn how to go from jetpackless, to the best of the best!
+
+Once the first jetpack is aquired it must be used in the recipe in place of the strap to Upgrade the jetpack, meaning no cutting in line!
+The sections below will take you through all tiers of jetpacks!
+
+## Sections
+
+Browse Jetpack upgrades by Tier.
+
+<div class="grid cards" markdown>
+
+"""
 for t in range(1, 7):
     index_content += f"-   **[Tier {t} Upgrades](tier{t}.md)**\n    \n    ---\n    \n    View upgrade recipes for Tier {t} Jetpacks.\n\n"
 index_content += "</div>\n"

@@ -168,3 +168,16 @@ body.mc-no-bold .mc-tooltip .mc-title,
 body.mc-no-bold .mc-tooltip .text-white {
     font-weight: normal !important;
 }
+
+/* Dark Mode Transition */
+.mc-theme-transition,
+.mc-theme-transition *,
+.mc-theme-transition .md-header,
+.mc-theme-transition .md-main__inner,
+.mc-theme-transition .md-sidebar,
+.mc-theme-transition .md-content,
+.mc-theme-transition .md-search,
+.mc-theme-transition .md-search__input,
+.mc-theme-transition .md-tabs {
+    transition: background-color 0.6s ease, color 0.6s ease, border-color 0.6s ease, fill 0.6s ease, box-shadow 0.6s ease, text-shadow 0.6s ease !important;
+}

@@ -2,33 +2,46 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. State Management
     const state = {
         boldText: localStorage.getItem('mc_bold_text') === 'true', // Default false
+        darkMode: localStorage.getItem('mc_dark_mode') !== 'false', // Default true
         engineActive: localStorage.getItem('mc_engine_active') === 'true', // Default false
         hoverActive: localStorage.getItem('mc_hover_active') === 'true', // Default false
         engineKey: localStorage.getItem('mc_engine_key') || 'V',
         hoverKey: localStorage.getItem('mc_hover_key') || 'G'
     };
 
-    function saveState() {
+    function saveState(isLoad = false) {
         localStorage.setItem('mc_bold_text', state.boldText);
+        localStorage.setItem('mc_dark_mode', state.darkMode);
         localStorage.setItem('mc_engine_active', state.engineActive);
         localStorage.setItem('mc_hover_active', state.hoverActive);
         localStorage.setItem('mc_engine_key', state.engineKey);
         localStorage.setItem('mc_hover_key', state.hoverKey);
-        applyGlobalClasses();
+        applyGlobalClasses(isLoad);
         // Dispatch custom event to notify tooltips.js
         window.dispatchEvent(new CustomEvent('mcSettingsChanged'));
     }
 
-    function applyGlobalClasses() {
+    function applyGlobalClasses(isLoad = true) {
         if (!state.boldText) {
             document.body.classList.add('mc-no-bold');
         } else {
             document.body.classList.remove('mc-no-bold');
         }
+        
+        // Apply MkDocs dark mode palette
+        document.body.setAttribute('data-md-color-scheme', state.darkMode ? 'slate' : 'default');
+
+        // Add fading transition only if it's an active toggle, not page load
+        if (!isLoad) {
+            document.body.classList.add('mc-theme-transition');
+            setTimeout(() => {
+                document.body.classList.remove('mc-theme-transition');
+            }, 600); // Wait for CSS transition to finish
+        }
     }
 
     // Apply initially
-    applyGlobalClasses();
+    applyGlobalClasses(true);
 
     // Export state globally so tooltips.js can read it
     window.mcSettings = state;
@@ -55,6 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="mc-setting-item">
             <span>Bold Tooltip Text</span>
             <div class="mc-toggle ${state.boldText ? 'active' : ''}" id="toggle-bold"></div>
+        </div>
+        <div class="mc-setting-item">
+            <span>Dark Mode</span>
+            <div class="mc-toggle ${state.darkMode ? 'active' : ''}" id="toggle-dark"></div>
         </div>
         <div class="mc-setting-item">
             <span>Active Engine</span>
@@ -99,6 +116,12 @@ document.addEventListener('DOMContentLoaded', () => {
         this.classList.toggle('active');
         state.boldText = this.classList.contains('active');
         saveState();
+    });
+
+    document.getElementById('toggle-dark').addEventListener('click', function() {
+        this.classList.toggle('active');
+        state.darkMode = this.classList.contains('active');
+        saveState(false);
     });
 
     const toggleEngine = document.getElementById('toggle-engine');
