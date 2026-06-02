@@ -32,7 +32,7 @@ public class ToggleHoverMessage implements CustomPacketPayload {
     public static void onMessage(ToggleHoverMessage message, MinecraftServer server, ServerPlayer player) {
         server.execute(() -> {
             if (player != null) {
-                ItemStack stack = player.getItemBySlot(EquipmentSlot.CHEST);
+                ItemStack stack = com.blakebr0.ironjetpacks.util.JetpackUtils.getEquippedJetpack(player);
                 Item item = stack.getItem();
                 if (item instanceof JetpackItem jetpack) {
                     jetpack.toggleHover(stack);
