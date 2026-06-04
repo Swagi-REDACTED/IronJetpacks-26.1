@@ -5,7 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "MixinLivingEntity", "MixinRecipeManager", "ServerPlayNetworkHandlerAccessor", "ShapedRecipeAccessor", "RecipeManagerAccessor",
-    "NormalCraftingRecipeAccessor"
+    "NormalCraftingRecipeAccessor", "compat.MixinBatteryItem"
   ],
   "client": [
     "MixinMouseHandler"
