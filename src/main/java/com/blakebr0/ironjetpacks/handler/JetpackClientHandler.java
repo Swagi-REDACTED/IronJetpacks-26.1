@@ -41,16 +41,24 @@ public class JetpackClientHandler {
                     double motionY = mc.player.getDeltaMovement().y();
                     if (InputHandler.isHoldingUp(mc.player)) {
                         if (!hover) {
-                            fly(mc.player, Math.min(motionY + currentAccel, currentSpeedVertical));
+                            if (motionY < currentSpeedVertical) {
+                                fly(mc.player, Math.min(motionY + currentAccel, currentSpeedVertical));
+                            }
                         } else {
                             if (InputHandler.isHoldingDown(mc.player)) {
-                                fly(mc.player, Math.min(motionY + currentAccel, -jetpack.speedHoverSlow));
+                                if (motionY < -jetpack.speedHoverSlow) {
+                                    fly(mc.player, Math.min(motionY + currentAccel, -jetpack.speedHoverSlow));
+                                }
                             } else {
-                                fly(mc.player, Math.min(motionY + currentAccel, jetpack.speedHover));
+                                if (motionY < jetpack.speedHover) {
+                                    fly(mc.player, Math.min(motionY + currentAccel, jetpack.speedHover));
+                                }
                             }
                         }
                     } else {
-                        fly(mc.player, Math.min(motionY + currentAccel, -hoverSpeed));
+                        if (motionY < -hoverSpeed) {
+                            fly(mc.player, Math.min(motionY + currentAccel, -hoverSpeed));
+                        }
                     }
                     
                     float speedSideways = (float) (mc.player.isShiftKeyDown() ? speedSideScaled * 0.5F : speedSideScaled);
