@@ -33,7 +33,7 @@ public class JetpackItem extends Item implements Colored, Enableable {
 
     public JetpackItem(Jetpack jetpack, Properties settings) {
         super(settings.humanoidArmor(JetpackUtils.makeArmorMaterial(jetpack),
-                net.minecraft.world.item.equipment.ArmorType.CHESTPLATE).durability(0).rarity(jetpack.rarity));
+                net.minecraft.world.item.equipment.ArmorType.CHESTPLATE).component(net.minecraft.core.component.DataComponents.UNBREAKABLE, net.minecraft.util.Unit.INSTANCE).rarity(jetpack.rarity));
         this.jetpack = jetpack;
     }
 
@@ -65,13 +65,15 @@ public class JetpackItem extends Item implements Colored, Enableable {
                 if (InputHandler.isHoldingUp(player) || hover && !player.onGround()) {
                     Jetpack info = jetpack.getJetpack();
 
-                    double hoverSpeed = InputHandler.isHoldingDown(player) ? info.speedHover : info.speedHoverSlow;
-                    double currentAccel = info.accelVert * (player.getDeltaMovement().y() < 0.3D ? 2.5D : 1.0D);
-                    double currentSpeedVertical = info.speedVert * (player.isUnderWater() ? 0.4D : 1.0D);
-
                     int throttle = getThrottle(stack);
+                    double throttleScale = throttle / 100.0;
+
+                    double hoverSpeed = InputHandler.isHoldingDown(player) ? info.speedHover : info.speedHoverSlow;
+                    double currentAccel = (info.accelVert * throttleScale) * (player.getDeltaMovement().y() < 0.3D ? 2.5D : 1.0D);
+                    double currentSpeedVertical = (info.speedVert * throttleScale) * (player.isUnderWater() ? 0.4D : 1.0D);
+
                     double usage = player.isSprinting() ? info.usage * info.sprintFuel : info.usage;
-                    usage = usage * (throttle / 100.0);
+                    usage = usage * throttleScale;
 
                     boolean creative = info.creative;
 
@@ -98,6 +100,29 @@ public class JetpackItem extends Item implements Colored, Enableable {
                         if (creative || extracted > 0) {
                             if (!creative) {
                                 transaction.commit();
+                            }
+
+                            double motionY = player.getDeltaMovement().y();
+                            if (InputHandler.isHoldingUp(player)) {
+                                if (!hover) {
+                                    if (motionY < currentSpeedVertical) {
+                                        fly(player, Math.min(motionY + currentAccel, currentSpeedVertical));
+                                    }
+                                } else {
+                                    if (InputHandler.isHoldingDown(player)) {
+                                        if (motionY < -info.speedHoverSlow) {
+                                            fly(player, Math.min(motionY + currentAccel, -info.speedHoverSlow));
+                                        }
+                                    } else {
+                                        if (motionY < info.speedHover) {
+                                            fly(player, Math.min(motionY + currentAccel, info.speedHover));
+                                        }
+                                    }
+                                }
+                            } else {
+                                if (motionY < -hoverSpeed) {
+                                    fly(player, Math.min(motionY + currentAccel, -hoverSpeed));
+                                }
                             }
 
                             player.fallDistance = 0.0F;
