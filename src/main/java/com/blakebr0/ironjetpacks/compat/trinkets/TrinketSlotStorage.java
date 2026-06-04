@@ -22,17 +22,7 @@ public class TrinketSlotStorage extends SingleStackStorage {
 
     @Override
     protected void setStack(ItemStack stack) {
-        ItemStack currentStack = slotAccess.get();
-        if (!currentStack.isEmpty() && !stack.isEmpty() && currentStack.getItem() == stack.getItem()) {
-            if (!Objects.equals(currentStack.getComponentsPatch(), stack.getComponentsPatch())) {
-                for (DataComponentType<?> type : currentStack.getComponents().keySet()) {
-                    currentStack.set(type, null);
-                }
-                currentStack.applyComponents(stack.getComponents());
-            }
-            currentStack.setCount(stack.getCount());
-            return;
-        }
+        // Set the stack directly instead of attempting in-place component mutation
         slotAccess.set(stack);
     }
 }
