@@ -20,6 +20,9 @@ public class TrinketsCompat {
                     if (entity instanceof Player player) {
                         if (item instanceof JetpackItem jetpackItem) {
                             jetpackItem.tickJetpack(stack, player);
+                            if (!player.level().isClientSide()) {
+                                jetpackItem.chargeJetpack(stack, player);
+                            }
                         }
                     }
                 }
